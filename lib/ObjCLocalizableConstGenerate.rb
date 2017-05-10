@@ -4,7 +4,7 @@ class ObjCLocalizableConstGenerate
     fail 'É necessário informar onde deseja salvar o arquivo' if path.nil?
     
     @contentConst = File.read(constantFile)
-    regx = /"(.+)"\s*=\s*"(.+)"\s*;/
+    regx = /"(.*)"\s*=\s*"(.*)"\s*;/
     @contentConst.gsub!(regx) do 
       key = $1
       "static NSString * const kLocalized#{key.gsub(".","_").camelcase} = @\"#{key}\";"

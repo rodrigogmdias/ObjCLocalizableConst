@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'ObjCLocalizableConst'
-  s.version     = '1.0.2'
+  s.version     = '1.0.4'
   s.date        = '2017-05-09'
   s.summary     = "Objective C Localizable to Constants!"
   s.description = "Objective C Localizable to Constants."
