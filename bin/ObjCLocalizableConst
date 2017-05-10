@@ -22,7 +22,7 @@ command :generate do |c|
 end
 
 command :replace do |c|
-  c.syntax = 'replace <LocalizeFile> <Folder or File> [options]'
+  c.syntax = 'replace <ConstantFile> <Folder or File> [options]'
   c.summary = 'Replace Strings in Folder using ConstFile.h'
   c.example 'description', 'replace {PATH} {DIR or FILE}'
 
