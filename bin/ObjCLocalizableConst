@@ -1,0 +1,33 @@
+#!/usr/bin/env ruby
+
+require 'rubygems'
+require 'commander/import'
+require 'active_support/all'
+
+require_relative '../lib/ObjCLocalizableConstGenerate'
+require_relative '../lib/ObjCLocalizableConstReplace'
+
+program :name, 'ObjCLocalizableConst'
+program :version, '1.0.2'
+program :description, 'Objective C Localizable to Constants!'
+
+command :generate do |c|
+  c.syntax = 'generate <LocalizeFile> <DestSave> [options]'
+  c.summary = 'Create file constants from localize.strings'
+  c.example 'description', 'generate {PATH} {DIR}'
+
+  c.action do |args, options|
+    ObjCLocalizableConstGenerate.running(args[0], args[1])
+  end
+end
+
+command :replace do |c|
+  c.syntax = 'replace <LocalizeFile> <Folder or File> [options]'
+  c.summary = 'Replace Strings in Folder using ConstFile.h'
+  c.example 'description', 'replace {PATH} {DIR or FILE}'
+
+  c.action do |args, options|
+    ObjCLocalizableConstReplace.running(args[0], args[1])
+  end
+end
+
