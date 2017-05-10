@@ -1,18 +1,18 @@
-#ObjCLocalizableConst
+# ObjCLocalizableConst
 
 Replace All keys of NSLocalizedString to Constant.
 
-##Install
+## Install
 
 `gem install ObjCLocalizableConst`
 
-##Usage Generate
+## Usage Generate
 
 Generate Constant File `.h`
 
 ```ObjCLocalizableConst generate <LocalizeFile> <DestSave>"```
 
-##Usage Replace
+## Usage Replace
 
 Replace Strings in Folder or File using ConstFile.h
 
