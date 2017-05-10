@@ -16,4 +16,4 @@ Generate Constant File `.h`
 
 Replace Strings in Folder or File using ConstFile.h
 
-```ObjCLocalizableConst replace <LocalizeFile> <Folder or File>```
+```ObjCLocalizableConst replace <ConstantFile> <Folder or File>```
